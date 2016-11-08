@@ -1,0 +1,133 @@
+Installation
+
+Use the -g options to install Gulp globally on your machine.
+
+sudo npm install -g gulp
+
+------------------------------------------------------
+CSS Minification
+
+Using gulp-minify-css
+
+npm install --save-dev gulp-minify-css
+
+
+gulpfile.js:
+
+// including plugins
+var gulp = require('gulp')
+, minifyCss = require("gulp-minify-css");
+ 
+// task
+gulp.task('minify-css', function () {
+    gulp.src('./Css/one.css') // path to your file
+    .pipe(minifyCss())
+    .pipe(gulp.dest('path/to/destination'));
+});
+
+
+Run:
+gulp minify-css
+
+
+----------------------------------------------------------
+
+JS Minification
+
+Using gulp-uglify
+
+npm install --save-dev gulp-uglify
+
+
+gulpfile.js:
+// including plugins
+var gulp = require('gulp')
+, uglify = require("gulp-uglify");
+ 
+// task
+gulp.task('minify-js', function () {
+    gulp.src('./JavaScript/*.js') // path to your files
+    .pipe(uglify())
+    .pipe(gulp.dest('path/to/destination'));
+});
+
+
+Run:
+gulp minify-js
+
+
+
+---------------------------------------------------------------
+Less Compilation
+
+Using gulp-less
+
+npm install --save-dev gulp-less
+
+
+gulpfile.js:
+// including plugins
+var gulp = require('gulp')
+, less = require("gulp-less");
+ 
+// task
+gulp.task('compile-less', function () {
+    gulp.src('./Less/*.less') // path to your file
+    .pipe(less())
+    .pipe(gulp.dest('path/to/destination'));
+});
+
+
+Run:
+gulp compile-less
+---------------------------------------------
+Sass Compilation
+
+Using gulp-sass
+
+npm install --save-dev gulp-sass
+
+
+gulpfile.js:
+// including plugins
+var gulp = require('gulp')
+, sass = require("gulp-sass");
+ 
+// task
+gulp.task('compile-sass', function () {
+    gulp.src('./Sass/one.sass') // path to your file
+    .pipe(sass())
+    .pipe(gulp.dest('path/to/destination'));
+});
+
+
+Run:
+gulp compile-sass
+-----------------------------------------------------
+Concatenate files
+
+Using gulp-concat
+
+npm install --save-dev gulp-concat
+
+
+gulpfile.js:
+// including plugins
+var gulp = require('gulp')
+, concat = require("gulp-concat");
+ 
+// task
+gulp.task('concat', function () {
+    gulp.src('./JavaScript/*.js') // path to your files
+    .pipe(concat('concat.js'))  // concat and name it "concat.js"
+    .pipe(gulp.dest('path/to/destination'));
+});
+
+Run:
+gulp concat
+---------------------------------------------------------
+
+
+
+
+
