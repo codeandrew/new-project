@@ -1,0 +1,36 @@
+
+
+https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css
+
+
+https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.7.1/less.min.js"></script>
+------------------------------------------------------------------------------
+
+
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"> </script>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.7.1/less.min.js"></script>
+
+-------------------------------------------------------------------------------------------------------
+
+Using CSS
+Copy the entire font-awesome directory into your project.
+In the <head> of your html, reference the location to your font-awesome.min.css.
+<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+Check out the examples to start using Font Awesome!
+Using Sass or Less
+Use this method to customize Font Awesome 4.6.3 using LESS or SASS.
+
+Copy the font-awesome/ directory into your project.
+Open your project's font-awesome/less/variables.less or font-awesome/scss/_variables.scss and edit the @fa-font-path or $fa-font-path variable to point to your font directory.
+@fa-font-path:   "../font";
+ The font path is relative from your compiled CSS directory.
+
+Re-compile your LESS or SASS if using a static compiler. Otherwise, you should be good to go.
+Check out the examples to start using Font Awesome!
+
